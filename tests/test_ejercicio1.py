@@ -3,11 +3,12 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-from practica.ejercicio1 import es_par
-
 """
 Pruebas del ejercicio 1.
 """
+
+from practica.ejercicio1 import es_par
+
 
 def test_es_par_verdadero_positivo():
     """
