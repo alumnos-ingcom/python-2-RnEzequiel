@@ -44,12 +44,14 @@ def superposicion(lista_uno, lista_dos, extension = True, inicio = False):
                 inicio_maxima_superposicion = indice_uno
             indice_dos = indice_dos + 1
         indice_uno = indice_uno + 1
+    devolucion = None
     if extension and inicio:
-        return (maxima_superposicion, inicio_maxima_superposicion)
+        devolucion = (maxima_superposicion, inicio_maxima_superposicion)
     elif extension:
-        return maxima_superposicion
+        devolucion = maxima_superposicion
     elif inicio:
-        return inicio_maxima_superposicion
+        devolucion = inicio_maxima_superposicion
+    return devolucion
 
 
 def principal():
