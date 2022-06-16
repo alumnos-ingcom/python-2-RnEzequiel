@@ -25,6 +25,8 @@ def rotar_caracter(caracter, indice):
     Recibe una cadena de 1 caracter y un indice en forma de número; y devuelve
     otro rotando entre los demás caracteres de su mismo tipo la cantidad
     especificada por el índice.
+    Si el caracter no está en ningún conjunto predeterminado, se devuelve sin
+    modificación
     """
     codigo = ord(caracter[0])
     rango = (0, 0)
